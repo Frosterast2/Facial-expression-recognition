@@ -1,2 +1,3 @@
 # Sports-its-in-the-tech
-Submission for IEEE
+Submission for IEEE competition
+
