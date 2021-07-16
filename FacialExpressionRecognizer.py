@@ -5,13 +5,13 @@ from tkinter import *
 import tkinter.filedialog as tkf
 
 win = Tk()
+face = mp.solutions.face_detection
+draw = mp.solutions.drawing_utils
+detec = face.FaceDetection()
+
+detector = FER(mtcnn=True)
+
 def brain(img):
-	face = mp.solutions.face_detection
-	draw = mp.solutions.drawing_utils
-	detec = face.FaceDetection()
-
-	detector = FER(mtcnn=True)
-
 	rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 	results = detec.process(rgb)
 
