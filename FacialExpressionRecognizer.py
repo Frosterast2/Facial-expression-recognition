@@ -4,7 +4,7 @@ import mediapipe as mp
 import cv2
 from tkinter import *
 import tkinter.filedialog as tkf
-#import multiprocessing
+import multiprocessing
 #from tkinter import PhotoImage
 from PIL import ImageTk, Image
 import webbrowser
@@ -108,7 +108,7 @@ def brain(img):
 		reportlabel.pack()
 		reports.pack()
 	
-	innerbrain(img=img)
+	multiprocessing.Process(target=innerbrain, args=(img, )).run()
 
 def camera():
 	video = cv2.VideoCapture(0)
