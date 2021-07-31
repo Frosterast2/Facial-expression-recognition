@@ -6,3 +6,4 @@ Make sure to run these commands in the cmd:
 2) pip install mediapipe
 3) pip install fer
 4) pip install Pillow
+5) pip install multiprocessing
